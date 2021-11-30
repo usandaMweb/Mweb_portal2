@@ -1,0 +1,16 @@
+# Default ignored files
+.target/
+target/*
+/shelf/
+/.idea/workspace.xml
+/compiler.xml
+.idea
+*.iws
+*.iml
+*.ipr
+target/
+*.class
+.classpath
+.allure
+.allure/
+.allure*

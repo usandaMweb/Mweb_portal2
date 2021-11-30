@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="RunnerFullSuite">
+    <parameter name="email" value="nikita.dereviankin@mweb.com"/>
+    <test name="AllTests" thread-count="8" parallel="methods">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testNG.testSuites.NC_FibreOrder_Frogfoot"/>
+
+        </classes>
+    </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,31 @@
+Short guide how to setup local machine and run autotests locally
+
+    1.Need to install Java on your machine (Here is an instruction how you can do it if it's not installed before https://java.com/en/download/help/java_mac.html)
+        On project I'm using version 1.8 (1.8.0_201) for Mac
+    2.Need to install a dev environment I prefer Intellij IDEA https://www.jetbrains.com/idea/download/#section=mac
+    3.Pull testing framework from github on local machine https://github.com/mwebcode/mweb-portal-testing.git
+    4.Open project using Intellij IDEA
+    5.Find folder with tests src/test/java
+    6.Find testNG package and open any test
+    7.Near with java class name you will see green button, click on that and then choose the first option (Run 'class_name')
+
+   Project structure:
+   This test framework inherits the page object template which contains:
+        3 main packages:
+            holders - Contains configuration files.
+            pageObjects - Contains 2 kinds of files which are related to tests, helpers and elements.
+            testNG - Test files.
+   //Keep in mind that chromedriver needs to be updated from time to time
+
+    Instructions for jenkins:
+        Test triggers for Jenkins configured in (run.sh) file
+        Running tests:
+            1. Login with credentials.
+            2. Select "Mweb_testing" job.
+            3. Click on "Build with parameters" on the left menu bar.
+            4. Select your branch or run on master by default.
+        Checking tests result:
+            1. Open your build.
+            2. Click on "Console output" more useful for engineers
+            3. Click on Allure Report
+
